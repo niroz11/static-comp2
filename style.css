@@ -1,9 +1,13 @@
-
+body{
+  margin: 0px;
+  padding: 0px;
+}
 .wrapper{
 	height: 100%;
 	display: grid;
-	grid-template-columns: 150px 2fr 1fr;
-    grid-template-rows: 65px 150px 300px 1fr;
+
+	grid-template-columns: 180px 2fr 1fr;
+    grid-template-rows: 75px 150px 300px 1fr;
 	grid-template-areas: 
 		"aside searchbar searchbar"
 		"aside  title title"
@@ -15,11 +19,13 @@ aside {
 	grid-area: aside; 
 	background-color: grey;
 
+
+
 }
 
 #profile{
 	display: grid;
-	justify-items: center;
+	justify-content: center;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border-bottom: 1px solid black;
@@ -30,38 +36,90 @@ img{
 	border-radius: 50px;
 }
 
-.nav-bar ul li{
+.nav-bar{
+  border-bottom: 0.3px solid black;
+  margin-top: 30px;
+}
 
-	display: flex;
-	flex-wrap: wrap;
-    flex-direction: columns;
-    justify-content: flex-start;
-    font-size: 25px;
-    /*justify-content: space-around;*/
-    justify-content: space-between;
-    text-decoration: none;
-    display: block;
-    padding: 5px;
-    margin-left: 10px;
-   
+.nav-bar ul li{
+  display: grid;
+  font-size: 17px;
+  text-decoration: none;
+  display: block;
+  justify-content: center;
+
     
+}
+
+.aside-heading{
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 15px;
+
 
 }
 
-li{
-	padding: 6px 2px;
+#main{
+  border-bottom: 3px solid black;
+} 
+
+.fas{
+  padding: 15px;
+  height: 10px;
+  width: 10px;
 }
 
 
 #search-bar{
 	grid-area: searchbar;
-	background-color: yellow; 
+	background-color: #e5e5e5;
+  display: inline-block;
+  font-size: 35px;
+  border-bottom: 3px solid black;
+}
+
+#search-box{
+  height: 25px;
+  font-size: 35px;
+  margin-left: 10px;
+  background-color: #e5e5e5;
+
+}
+
+#search-bar-icons{
+  margin-right: 25px;
+}
+
+
+#ham-burger{
+  display: inline-block;
+}
+#search-input{
+  display: inline-block;
+}
+
+#search-bar-icons{
+  display: inline-block;
+  float: right;
+  
 }
 
 #title{
 	grid-area: title; 
-	background-color: green;
+  display: flex;
+  flex-direction: column;
+
+
+
 }
+#title-container{
+  display: flex;
+  flex-direction: row;
+}
+	
+
+
 
 #graph{
 	grid-area: graph; 
@@ -77,6 +135,63 @@ li{
 	grid-area: social; 
 	background-color: magenta;
 }
+
+#title-bar{
+  background-color: red;
+  height: 15vh;
+  width: 70%;
+  margin: 20px;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+#title-left{
+  background-color: green;
+  display: inline-block;
+  height: 15vh;
+  width: 25%;
+  margin-top: 21px;
+  
+
+}
+
+
+
+#circles{
+  width: 60%;
+  height: 35vh;
+  background-color: yellow;
+  margin: 20px;
+  margin-right: 0px;
+  display: inline-block;
+
+}
+
+#graph-section{
+  width: 35%;
+  height: 35vh;
+  background-color: pink;
+  display: inline-block;
+  margin-left: 18px;
+  
+}
+
+#job-board{
+  width: 90%;
+  height: 100vh;
+  background-color: #FD7D04;
+  margin-left: 18px;
+  margin-right: 0px;
+}
+
+#social-items{
+  width: 10%;
+  height: 100vh;
+  
+  /*margin-left: 18px;*/
+}
+
 
 
 
