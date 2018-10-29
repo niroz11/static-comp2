@@ -10,7 +10,7 @@ body{
 	display: grid;
 
 	grid-template-columns: 150px 2fr;
-  grid-template-rows:  150px 150px 100px 300px 1fr;
+  grid-template-rows:  150px 150px 100px 300px /*1fr*/;
 	grid-template-areas: 
 		"aside searchbar"
 		"aside  title"
@@ -160,7 +160,8 @@ img{
 
 }
 #job-section{
-  grid-area: jobs;
+  /*border: 2px solid black;*/
+  display: flex;
 }
 #job-description{
 	 
@@ -177,18 +178,22 @@ img{
 }
 
 #job-details{
-    margin-left: 34px;
-    margin-top: 37px;
-    border: 2px solid black;
+    margin-left: 36px;
+    margin-top: 0px;
+    /*border: 2px solid black;*/
     height: 70vh;
 
 }
 
 #social{
-	grid-area: social; 
 	background-color: magenta;
-  width: 29%;
   display: inline-block;
+  /*border: 2px solid black;*/
+  margin: 20px;
+  width: 30%;
+
+
+
 
   
 }
@@ -258,14 +263,13 @@ img{
   width: 68%;
   height: 100vh;
   /*background-color: #FD7D04;*/
-  margin-left: 18px;
+  margin-left: -19px;
   margin-right: 0px;
+  margin-top: 0px;
   display: inline-block;
 }
 
-#job-details{
-  display: inline-block;
-}
+
 
 #job-heading{
   display: inline-block;
@@ -296,8 +300,10 @@ img{
 }
 
 #job-desc-bottom{
-  margin-top: 128px;
+  margin-top: 150px;
 }
+
+
 
 /*#social-items{
   width: 35%;
@@ -319,6 +325,36 @@ img{
 #categories ul li {
   margin-top: 10px;
 }
+
+.social-icons{
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-between;
+
+}
+
+.fa-facebook-square:before {
+    content: "\f082";
+    font-size: 23px;
+}
+
+.social-icons span{
+  margin-right: 75px;
+    font-size: 20px;
+}
+.fa-twitter-square:before {
+    content: "\f082";
+    font-size: 23px;
+}
+.fa-linkedin:before {
+    content: "\f08c";
+    font-size: 23px;
+}
+
+
 
 
 input[type="checkbox"] {
