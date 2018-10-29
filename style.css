@@ -2,23 +2,32 @@ body{
   margin: 0px;
   padding: 0px;
 }
+
+
 .wrapper{
 	height: 100%;
+  width: 100%;
 	display: grid;
 
-	grid-template-columns: 180px 2fr 1fr;
-    grid-template-rows: 75px 150px 300px 1fr;
+	grid-template-columns: 180px 2fr;
+    grid-template-rows: 75px 150px 100px 300px 1fr;
 	grid-template-areas: 
-		"aside searchbar searchbar"
-		"aside  title title"
-		"aside graph graph"
-		"aside jobs social";
+		"aside searchbar"
+		"aside  title"
+    "aside title-menu"
+		"aside graph"
+		"aside jobs";
+}
+
+content{
+  padding: 10px;
 }
 
 aside {
 	grid-area: aside; 
 	background-color: #334053;
   color: #b5bcc4;
+  height: 100%;
 
 
 
@@ -79,6 +88,7 @@ img{
   display: inline-block;
   font-size: 35px;
   border-bottom: 3px solid black;
+  width: 100%;
 }
 
 #search-box{
@@ -115,6 +125,10 @@ img{
 
 
 }
+
+#title-menu{
+  grid-area: title-menu;
+}
 #title-container{
   display: flex;
   flex-direction: row;
@@ -128,9 +142,11 @@ img{
 	background-color: blue;
 
 }
-
+#job-section{
+  grid-area: jobs;
+}
 #job-description{
-	grid-area: jobs; 
+	 
 	background-color: pink;
   margin-right: 0px;
 }
@@ -138,12 +154,15 @@ img{
 #social{
 	grid-area: social; 
 	background-color: magenta;
+  width: 29%;
+  display: inline-block;
+
   
 }
 
 #title-bar{
-  height: 15vh;
-  width: 70%;
+  /*height: 15vh;*/
+  /*width: 70%;*/
   margin: 20px;
   display: inline-block;
   text-align: left;
@@ -151,12 +170,28 @@ img{
 }
 
 #title-left{
-  background-color: green;
+  /*background-color: green;*/
   display: inline-block;
   height: 15vh;
-  width: 25%;
-  margin-top: 21px;
   
+  margin-top: 21px;
+  margin-left: auto;
+  
+}
+
+#title-left ul li{
+  display: inline-block;
+  border-radius: 
+  display: inline-block;
+    
+    border: 3px solid black;
+    border-radius: 40px;
+    margin: 0 auto;
+    padding: 5px;
+    margin: 5px;
+    
+    
+    font-size: 20px;
 
 }
 
@@ -182,11 +217,12 @@ img{
 }
 
 #job-board{
-  width: 90%;
+  width: 68%;
   height: 100vh;
   background-color: #FD7D04;
   margin-left: 18px;
   margin-right: 0px;
+  display: inline-block;
 }
 
 /*#social-items{
@@ -227,6 +263,31 @@ input[type="checkbox"]:checked {
   color: #333;
   content: "\2713";
   text-align: center;
+}
+
+
+dl {
+  width: 100%;
+  overflow: hidden;
+  background: #ff0;
+  padding: 0;
+  margin: 0
+}
+dt {
+  float: left;
+  width: 50%;
+  /* adjust the width; make sure the total of both is 100% */
+  background: #cc0;
+  padding: 0;
+  margin: 0
+}
+dd {
+  float: left;
+  width: 50%;
+  /* adjust the width; make sure the total of both is 100% */
+  background: #dd0
+  padding: 0;
+  margin: 0
 }
 
 
