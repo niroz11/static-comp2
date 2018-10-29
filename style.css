@@ -142,7 +142,6 @@ img{
 }
 
 #title-bar{
-  background-color: red;
   height: 15vh;
   width: 70%;
   margin: 20px;
@@ -212,6 +211,23 @@ img{
 }
 
 
+input[type="checkbox"] {
+  border: 1px solid #333;
+  content: "\00a0";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0 .25em 0 0;
+  padding: 0;
+  vertical-align: top;
+  width: 16px;
+}
+input[type="checkbox"]:checked {
+  background: #fff;
+  color: #333;
+  content: "\2713";
+  text-align: center;
+}
 
 
 
