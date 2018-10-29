@@ -17,7 +17,8 @@ body{
 
 aside {
 	grid-area: aside; 
-	background-color: grey;
+	background-color: #334053;
+  color: #b5bcc4;
 
 
 
@@ -48,6 +49,7 @@ img{
   display: block;
   justify-content: center;
 
+
     
 }
 
@@ -73,7 +75,7 @@ img{
 
 #search-bar{
 	grid-area: searchbar;
-	background-color: #e5e5e5;
+	background-color: #fefefe;
   display: inline-block;
   font-size: 35px;
   border-bottom: 3px solid black;
@@ -124,16 +126,19 @@ img{
 #graph{
 	grid-area: graph; 
 	background-color: blue;
+
 }
 
 #job-description{
 	grid-area: jobs; 
 	background-color: pink;
+  margin-right: 0px;
 }
 
 #social{
 	grid-area: social; 
 	background-color: magenta;
+  
 }
 
 #title-bar{
@@ -185,12 +190,27 @@ img{
   margin-right: 0px;
 }
 
-#social-items{
-  width: 10%;
-  height: 100vh;
+/*#social-items{
+  width: 35%;
+  height: 35vh;
+  background-color: pink;
+  display: inline-block;
+  margin-left: 18px;
   
   /*margin-left: 18px;*/
+
+
+.check-box{
+    margin: 0 15px;
+    margin-right: 11px;
+    margin-bottom: 8px;
+  
 }
+
+#categories ul li {
+  margin-top: 10px;
+}
+
 
 
 
