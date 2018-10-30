@@ -77,8 +77,10 @@ img{
 
 .fas{
   padding: 15px;
-  height: 10px;
-  width: 10px;
+  font-size: 20px;
+
+  /*height: 10px;
+  width: 10px;*/
 }
 
 
@@ -87,7 +89,7 @@ img{
 	background-color: #fefefe;
   display: inline-block;
   font-size: 35px;
-  border-bottom: 3px solid black;
+  border-bottom: 1px solid #cccccc;
   width: 100%;
 }
 
@@ -101,6 +103,13 @@ img{
 
 #search-bar-icons{
   margin-right: 25px;
+  display: inline-block;
+}
+
+.user-icon{
+  display: inline-block;
+  border:1px solid #cccccc;
+  padding: 0px;
 }
 
 
@@ -156,6 +165,7 @@ img{
 
 #graph{
 	grid-area: graph; 
+  display: flex;
 	/*background-color: blue;*/
 
 }
@@ -186,11 +196,13 @@ img{
 }
 
 #social{
-	background-color: magenta;
+	/*background-color: magenta;*/
   display: inline-block;
   /*border: 2px solid black;*/
   margin: 20px;
+  margin-left: 54px;
   width: 30%;
+  /*border: 2px solid black;*/
 
 
 
@@ -249,6 +261,10 @@ img{
   display: inline-block;
 
 }
+.donuts{
+  width: 33%;
+
+}
 
 #graph-section{
   width: 35%;
@@ -256,11 +272,12 @@ img{
   background-color: pink;
   display: inline-block;
   margin-left: 18px;
+  margin-top: 20px;
   
 }
 
 #job-board{
-  width: 68%;
+  width: 65%;
   height: 100vh;
   /*background-color: #FD7D04;*/
   margin-left: -19px;
@@ -305,14 +322,7 @@ img{
 
 
 
-/*#social-items{
-  width: 35%;
-  height: 35vh;
-  background-color: pink;
-  display: inline-block;
-  margin-left: 18px;
-  
-  /*margin-left: 18px;*/
+
 
 
 .check-box{
@@ -327,15 +337,27 @@ img{
 }
 
 .social-icons{
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   padding: 10px;
   text-align: center;
   display: flex;
   justify-content: flex-start;
   justify-content: space-between;
+  margin-bottom: 10px;
+
 
 }
 
+#facebook{
+   background-color: #4670cb;
+}
+
+#twitter{
+  background-color: #00a9f5;
+}
+#LinkedIn{
+  background-color: #0082c1;
+}
 .fa-facebook-square:before {
     content: "\f082";
     font-size: 23px;
@@ -352,6 +374,23 @@ img{
 .fa-linkedin:before {
     content: "\f08c";
     font-size: 23px;
+}
+
+#social-text p{
+  margin-left: 13px;
+}
+
+#social-input{
+  margin-left: 13px;
+  font-size: 15px;
+  margin-top: 15px;
+  width: 75%;
+  margin-right: 0px;
+}
+
+#social-button{
+  font-size:15px;
+  background-color: #07bdc5;
 }
 
 
