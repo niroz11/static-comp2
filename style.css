@@ -107,8 +107,12 @@ aside li:hover{
 .user-icon{
   display: inline-block;
   border:1px solid #cccccc;
-  padding: 0px;
+  width: 10px;
+  height: 10px;
+  
 }
+
+
 
 .user-icon:hover{
   background-color: #00aaaa;
@@ -116,6 +120,8 @@ aside li:hover{
 
 #ham-burger{
   display: inline-block;
+  height: 10px;
+  width: 10px;
   
 }
 #search-input{
@@ -372,10 +378,17 @@ aside li:hover{
 
 #categories ul li {
   margin-top: 10px;
+  padding: 10px;
 }
 
+.container-checkmark input{
+  background-color: red;
+}
+
+
+
 .social-icons{
-  /*border: 2px solid black;*/
+  
   padding: 10px;
   text-align: center;
   display: flex;
