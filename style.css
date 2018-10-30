@@ -8,9 +8,8 @@ body{
 	height: 100%;
   width: 100%;
 	display: grid;
-
 	grid-template-columns: 180px 2fr;
-  grid-template-rows:  150px 150px 100px 300px 1fr;
+  grid-template-rows: 60px 100px 40px 300px 1fr;
 	grid-template-areas: 
 		"aside searchbar"
 		"aside  title"
@@ -19,16 +18,11 @@ body{
 		"aside jobs";
 }
 
-
-
 aside {
 	grid-area: aside; 
 	background-color: #334053;
   color: #b5bcc4;
   height: 100%;
-
-
-
 }
 
 #profile{
@@ -67,8 +61,6 @@ aside li:hover{
   font-size: 15px;
   font-weight: bold;
   margin-left: 15px;
-
-
 }
 
 #main{
@@ -84,7 +76,7 @@ aside li:hover{
 }
 
 
-#search-bar{
+#search-bar {
 	grid-area: searchbar;
 	background-color: #fefefe;
   display: inline-block;
@@ -94,16 +86,22 @@ aside li:hover{
 }
 
 #search-box{
-  height: 25px;
-  font-size: 35px;
-  margin-left: 10px;
+  height: 49px;
+  padding: 0px;
+  font-size: 68px;
+  margin-left: 24px;
   background-color: #e5e5e5;
+}
+
+
 
 }
 
 #search-bar-icons{
-  margin-right: 25px;
+  /*margin-right: 25px;*/
   display: inline-block;
+  border: 1px solid black;
+  background-color: red;
 }
 
 .user-icon{
@@ -118,6 +116,7 @@ aside li:hover{
 
 #ham-burger{
   display: inline-block;
+  
 }
 #search-input{
   display: inline-block;
@@ -197,6 +196,7 @@ aside li:hover{
   background-color: #ecf2f6;
   display: flex;
   padding: 15px;
+  grid-area: jobs;
 }
 #job-description{
 	 
@@ -250,9 +250,7 @@ aside li:hover{
 }
 
 #title-left ul li{
-  display: inline-block;
-  border-radius: 
-  display: inline-block;
+  display: inline-block; 
 
     
     border: 3px solid black;
