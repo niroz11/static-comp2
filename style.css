@@ -9,8 +9,8 @@ body{
   width: 100%;
 	display: grid;
 
-	grid-template-columns: 150px 2fr;
-  grid-template-rows:  150px 150px 100px 300px /*1fr*/;
+	grid-template-columns: 180px 2fr;
+  grid-template-rows:  150px 150px 100px 300px 1fr;
 	grid-template-areas: 
 		"aside searchbar"
 		"aside  title"
@@ -19,9 +19,7 @@ body{
 		"aside jobs";
 }
 
-content{
-  padding: 10px;
-}
+
 
 aside {
 	grid-area: aside; 
@@ -44,6 +42,7 @@ aside {
 
 img.profile-pic{
 	border-radius: 50px;
+  vertical-align: bottom;
 }
 
 .nav-bar{
@@ -56,10 +55,11 @@ img.profile-pic{
   font-size: 17px;
   text-decoration: none;
   display: block;
-  justify-content: center;
+  justify-content: center; 
+}
 
-
-    
+aside li:hover{
+  background-color: black;
 }
 
 .aside-heading{
@@ -112,6 +112,9 @@ img.profile-pic{
   padding: 0px;
 }
 
+.user-icon:hover{
+  background-color: #00aaaa;
+}
 
 #ham-burger{
   display: inline-block;
@@ -145,6 +148,26 @@ img.profile-pic{
   font-size: 20px;
 
 }
+
+#title-menu .active{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.nav-tab{
+  text-decoration: none;
+  color: #444444;
+
+}
+
+.nav-tab:hover{
+  font-weight: bold;
+  
+  text-decoration: underline;
+
+}
+
+
 #title-container{
   display: flex;
   flex-direction: row;
@@ -189,8 +212,8 @@ img.profile-pic{
 
 #job-details{
     margin-left: 36px;
-    margin-top: 0px;
-    /*border: 2px solid black;*/
+    margin-top: 15px;
+    
     height: 70vh;
 
 }
@@ -306,6 +329,7 @@ img.profile-pic{
 
 #job-heading{
   display: inline-block;
+
   
 
   
