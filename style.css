@@ -42,7 +42,7 @@ aside {
 
 }
 
-img{
+img.profile-pic{
 	border-radius: 50px;
 }
 
@@ -166,11 +166,12 @@ img{
 #graph{
 	grid-area: graph; 
   display: flex;
-	/*background-color: blue;*/
+  background-color: #ecf2f6;
+	
 
 }
 #job-section{
-  /*border: 2px solid black;*/
+  background-color: #ecf2f6;
   display: flex;
 }
 #job-description{
@@ -180,11 +181,9 @@ img{
 }
 
 #job-title{
-  margin-top: 20px;
   font-size: 25px;
-  margin-left: 36px;
-  height: 8vh;
   background-color: grey;
+  padding: 15px;
 }
 
 #job-details{
@@ -199,8 +198,7 @@ img{
 	/*background-color: magenta;*/
   display: inline-block;
   /*border: 2px solid black;*/
-  margin: 20px;
-  margin-left: 54px;
+  
   width: 30%;
   /*border: 2px solid black;*/
 
@@ -255,34 +253,53 @@ img{
 #circles{
   width: 60%;
   height: 35vh;
-  background-color: yellow;
+  
   margin: 20px;
   margin-right: 0px;
   display: inline-block;
 
 }
 .donuts{
-  width: 33%;
+  width: 32%;
+  display: inline-block;
 
+}
+
+.chart-number {
+  font-size: 0.6em;
+  line-height: 1;
+  text-anchor: middle;
+  -moz-transform: translateY(-0.25em);
+  -ms-transform: translateY(-0.25em);
+  -webkit-transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
+}
+
+.chart-label {
+  font-size: 0.2em;
+  text-transform: uppercase;
+  text-anchor: middle;
+  -moz-transform: translateY(0.7em);
+  -ms-transform: translateY(0.7em);
+  -webkit-transform: translateY(0.7em);
+  transform: translateY(0.7em);
 }
 
 #graph-section{
   width: 35%;
   height: 35vh;
-  background-color: pink;
+  
   display: inline-block;
   margin-left: 18px;
   margin-top: 20px;
   
 }
 
+
 #job-board{
   width: 65%;
-  height: 100vh;
-  /*background-color: #FD7D04;*/
-  margin-left: -19px;
-  margin-right: 0px;
-  margin-top: 0px;
+  
+  background-color: #ffffff;
   display: inline-block;
 }
 
