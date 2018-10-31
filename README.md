@@ -13,9 +13,13 @@
 * Alignment of some text areas 
 * Proper usage of font awesome icons 
 
+## Screenshot of original comp
+![original version](/images/original-file.jpg )
+
+
 ## Screenshot of final copy of static-comp2
-![](images/1.png )
-![](images/2.png)
+![finished version](/images/1.png )
+![finished version](/images/2.png)
 
 
 
