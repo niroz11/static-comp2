@@ -14,8 +14,8 @@
 * Proper usage of font awesome icons 
 
 ## Screenshot of final copy of static-comp2
-![](1.png )
-![](2.png)
+![](images/1.png )
+![](images/2.png)
 
 
 
