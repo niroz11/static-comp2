@@ -14,12 +14,12 @@
 * Proper usage of font awesome icons 
 
 ## Screenshot of original comp
-![original version](/images/original-file.jpg )
+![original version](./images/original-file.jpg )
 
 
 ## Screenshot of final copy of static-comp2
-![finished version](/images/1.png )
-![finished version](/images/2.png)
+![finished version](./images/1.png )
+![finished version](./images/2.png)
 
 
 
