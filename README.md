@@ -18,8 +18,8 @@
 
 
 ## Screenshot of final copy of static-comp2
-![finished version](../images/1.png )
-![finished version](../images/2.png)
+![finished version](/images/1.png )
+![finished version](/images/2.png)
 
 
 
